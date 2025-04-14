@@ -1,0 +1,10 @@
+15:07:37 **** Incremental Build of configuration Debug for project cantx ****
+make -j12 all 
+arm-none-eabi-size   cantx.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10572	     28	   1700	  12300	   300c	cantx.elf
+Finished building: default.size.stdout
+ 
+
+15:07:37 Build Finished. 0 errors, 0 warnings. (took 253ms)
+
