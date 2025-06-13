@@ -1,10 +1,20 @@
-15:07:37 **** Incremental Build of configuration Debug for project cantx ****
+11:47:52 **** Incremental Build of configuration Debug for project cantx ****
 make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103xB -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "cantx.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\RTOS\cantx\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="cantx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: cantx.elf
+ 
 arm-none-eabi-size   cantx.elf 
+arm-none-eabi-objdump -h -S  cantx.elf  > "cantx.list"
+arm-none-eabi-objcopy  -O binary  cantx.elf  "cantx.bin"
    text	   data	    bss	    dec	    hex	filename
   10572	     28	   1700	  12300	   300c	cantx.elf
 Finished building: default.size.stdout
  
+Finished building: cantx.list
+ 
+Finished building: cantx.bin
+ 
 
-15:07:37 Build Finished. 0 errors, 0 warnings. (took 253ms)
+11:47:53 Build Finished. 0 errors, 0 warnings. (took 1s.381ms)
 
