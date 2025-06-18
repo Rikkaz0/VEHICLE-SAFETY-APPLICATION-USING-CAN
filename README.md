@@ -6,18 +6,18 @@ Lê Quang Hùng
 
 Trần Thanh Tín 
 
-Cantx = Master
-Canrx = Slave1
+Canrx = Master
+Cantx = Slave1
 Canrx2 = Slave2
 
-Master
+MASTER
 ![image](https://github.com/user-attachments/assets/b3483149-9ff9-45da-a754-5e476c802f58)
 
 
-Slave1 
+SLAVE1
 ![image](https://github.com/user-attachments/assets/01ea71d8-7561-4ee0-a516-9fbfde50c9cf)
 
-SLave2 
+SLAVE2 
 ![image](https://github.com/user-attachments/assets/52e3f4dd-8687-4de6-a0b6-006114883896)
 
 Mô phỏng dự án:
